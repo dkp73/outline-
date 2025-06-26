@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+  .logo-container {
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    width: auto;
+    max-width: 240px;
+    background: transparent;
+    border: 1.5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    padding: 35px 12px 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  }
+
+  .outline-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 0.8px rgba(0, 0, 0, 0.35);
+    text-stroke: 0.8px rgba(0, 0, 0, 0.35);
+    margin-bottom: 6px;
+  }
+
+  .plain-text {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    margin-bottom: 3px;
+  }
+
+  audio {
+    display: none;
+  }
+</style>
+
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-drawing-room">
+        <li class="text">Drawing room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-foyer">
+        <li class="text">Foyer</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-dining-area">
+        <li class="text">Dining area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-bedroom-3">
+        <li class="text">Bedroom-3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-bedroom-2">
+        <li class="text">Bedroom-2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-bedroom-4">
+        <li class="text">Bedroom-4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-master-bedroom-1">
+        <li class="text">Master bedroom-1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-bath">
+        <li class="text">Bath</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-pantry">
+        <li class="text">pantry</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-family-living">
+        <li class="text">Family living</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-re-">
+        <li class="text">Re-</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-patio">
+        <li class="text">patio</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+<div class="logo-container">
+  <div class="outline-text">Outline</div>
+  <div class="plain-text">Tripunithura</div>
+  <div class="plain-text">outlineint70@gmail.com</div>
+</div>
+
+<audio autoplay loop>
+  <source src="trimmed_bgm.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
