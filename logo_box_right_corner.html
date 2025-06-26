@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    .logo-container {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      width: auto;
+      max-width: 300px;
+      background: transparent;
+      border: 2px solid rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      padding: 50px 15px 15px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .outline-text {
+      font-size: 22px;
+      font-weight: bold;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+      text-stroke: 1px rgba(0, 0, 0, 0.4);
+      margin-bottom: 8px;
+    }
+
+    .plain-text {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 4px;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <div class="outline-text">Outline</div>
+    <div class="plain-text">Tripunithura</div>
+    <div class="plain-text">outlineint70@gmail.com</div>
+  </div>
+
+  <!-- Replace 'trimmed_bgm.mp3' with your own MP3 file -->
+  <audio autoplay loop>
+    <source src="trimmed_bgm.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
